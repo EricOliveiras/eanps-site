@@ -1,0 +1,8 @@
+#services {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
