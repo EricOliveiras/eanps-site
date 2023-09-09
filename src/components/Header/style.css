@@ -8,8 +8,17 @@
 	text-align: center;
 }
 
+.logo {
+	display: flex;
+	flex-direction: column;
+}
+
 #header-title {
 	font-size: 2.2rem;
+}
+
+#header-paragraph {
+	font-size: 0.9rem;
 }
 
 nav ul {
@@ -32,6 +41,10 @@ nav a {
 	font-weight: bold;
 } 
 
+nav a:hover {
+	border-bottom: 2px solid black;
+}
+
 @media (max-width: 1023px) and (min-width: 768px) {
 	#header {
 		align-items: center;
@@ -40,9 +53,22 @@ nav a {
 		padding: 10px 80px;
 	}
 
+	#header-title {
+		font-size: 2rem;
+	}
+
+	#header-paragraph {
+		font-size: 0.7rem;
+		width: 100%;
+	}	
+
 	nav ul li {
 		display: inline;
 		margin-left: 20px;
+	}
+
+	nav a {
+		font-size: 1.1rem;
 	}
 }
 
@@ -51,9 +77,20 @@ nav a {
 		align-items: center;
 		display: flex;
 		height: 80px;
+		padding: 0;
 	}
 
   nav {
 		display: none;
 	}
+
+	.logo {
+		margin-bottom: 5px;
+		width: 100vw;
+	}
+
+	#header-paragraph {
+		font-size: 0.6rem;
+		width: 100%;
+	}	
 }
