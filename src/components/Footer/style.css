@@ -1,0 +1,19 @@
+#footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #136E5F;
+  color: white;
+  padding: 10px 0;
+}
+
+#footer a {
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  #footer a, p{
+    font-size: 0.9rem;
+  }
+}
