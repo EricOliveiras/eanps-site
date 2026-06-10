@@ -2,18 +2,26 @@ import Header from './components/Header'
 import Banner from './components/Banner'
 import About from './components/About'
 import Services from './components/Services'
+import HowItWorks from './components/HowItWorks'
+import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import WhatsAppFloat from './components/WhatsAppFloat'
 
 function App() {
   return (
     <>
       <Header />
-      <Banner />
-      <About />
-      <Services />
-      <Contact />
+      <main>
+        <Banner />
+        <About />
+        <Services />
+        <HowItWorks />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   )
 }

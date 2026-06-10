@@ -1,0 +1,122 @@
+.faq-section {
+  background-color: var(--color-bg-white);
+  padding: 80px 40px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faq-subtitle {
+  font-size: 0.97rem;
+  color: var(--color-text-medium);
+  margin-top: 8px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 18px var(--color-shadow);
+}
+
+.faq-item--open {
+  border-color: var(--color-primary);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color var(--transition);
+}
+
+.faq-question:hover {
+  background-color: var(--color-bg-mint);
+}
+
+.faq-item--open .faq-question {
+  color: var(--color-primary);
+  background-color: var(--color-bg-mint);
+}
+
+.faq-chevron {
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+  color: var(--color-primary);
+}
+
+.faq-chevron--up {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 24px 20px;
+}
+
+.faq-answer p {
+  font-size: 0.93rem;
+  color: var(--color-text-medium);
+  line-height: 1.78;
+}
+
+.faq-footer-note {
+  text-align: center;
+  font-size: 0.93rem;
+  color: var(--color-text-medium);
+}
+
+.faq-footer-note a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq-footer-note a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Mobile ──────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .faq-section {
+    padding: 60px 20px;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 16px 18px;
+  }
+
+  .faq-answer {
+    padding: 0 18px 16px;
+  }
+}

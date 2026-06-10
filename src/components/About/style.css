@@ -1,58 +1,104 @@
 .about {
-	align-items: center;
-	background-color: #DFFAF5;
-	display: flex;
-	padding: 0 100px;
-	height: 100vh;
+  background-color: var(--color-bg-mint);
+  padding: 80px 40px;
 }
 
-#about-img {
-	width: 40vw;
-	height: 80vh;
+.about-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 64px;
 }
 
-#about-paragraph {
-	margin-left: 15px;
-	font-size: 1.5rem;
-	width: 60vw;
+.about-image-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.about-image-wrap img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-tag {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.about-text {
+  font-size: 0.97rem;
+  color: var(--color-text-medium);
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.about-values {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.value-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.value-item strong {
+  display: block;
+  font-size: 0.97rem;
+  color: var(--color-text-dark);
+  margin-bottom: 2px;
+}
+
+.value-item p {
+  font-size: 0.87rem;
+  color: var(--color-text-medium);
+}
+
+/* ─── Tablet ──────────────────────────────────────────────────── */
 @media (max-width: 1023px) and (min-width: 768px) {
-	.about {
-		background-color: #DFFAF5;
-		display: flex;
-		padding: 0 10px;
-	}
-	
-	#about-img {
-		width: 60vw;
-		height: 50vh;
-	}
-	
-	#about-paragraph {
-		font-size: 1.3rem;
-		width: 60vw;
-	}
+  .about {
+    padding: 64px 24px;
+  }
+
+  .about-container {
+    gap: 32px;
+  }
 }
 
+/* ─── Mobile ──────────────────────────────────────────────────── */
 @media (max-width: 767px) {
-	.about {
-		align-items: center;
-		background-color: #DFFAF5;
-		display: flex;
-		flex-direction: column;
-		height: auto;
-	}
-	
-	#about-img {
-		height: 40vh;
-		order: -1;
-		width: 90vw;
-	}
-	
-	#about-paragraph {
-		font-size: 0.9rem;
-		margin-bottom: 10px;
-		width: 90vw;
-	}
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .about-image-wrap img {
+    max-width: 240px;
+  }
+
+  .about-text {
+    font-size: 0.93rem;
+  }
 }

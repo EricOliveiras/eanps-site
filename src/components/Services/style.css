@@ -1,8 +1,40 @@
-#services {
-  align-items: center;
+.services {
+  background-color: var(--color-bg-white);
+  padding: 80px 40px;
+}
+
+.services-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.services-subtitle {
+  font-size: 0.97rem;
+  color: var(--color-text-medium);
+  max-width: 480px;
+  margin: 8px auto 0;
+  line-height: 1.6;
+}
+
+#services-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  gap: 24px;
+}
+
+/* ─── Mobile ──────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .services {
+    padding: 60px 20px;
+  }
+
+  .services-header {
+    margin-bottom: 32px;
+  }
 }

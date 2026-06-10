@@ -1,0 +1,136 @@
+.how-it-works {
+  background-color: var(--color-primary);
+  padding: 80px 40px;
+  color: white;
+}
+
+.how-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.how-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.how-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.how-subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 460px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.steps-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.step-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--border-radius);
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.step-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  opacity: 0.2;
+  line-height: 1;
+  display: block;
+}
+
+.step-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin: 6px 0 12px;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step-description {
+  font-size: 0.88rem;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.how-cta {
+  text-align: center;
+}
+
+.btn-how {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: white;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all var(--transition);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-how:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
+  background-color: #f0fdfb;
+  color: var(--color-primary-hover);
+}
+
+/* ─── Tablet ──────────────────────────────────────────────────── */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .how-it-works {
+    padding: 64px 24px;
+  }
+}
+
+/* ─── Mobile ──────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .how-it-works {
+    padding: 60px 20px;
+  }
+
+  .steps-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .step-card {
+    padding: 24px 20px;
+  }
+}
